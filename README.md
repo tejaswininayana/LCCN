@@ -1,9 +1,9 @@
 # LCCN
 Label-Constrained Cascade Normalization for Emotion Detection in Kannada-English Code-Mixed Text
-## 📋 Overview
+##  Overview
 
 LCCN is a label-constrained cascade normalization framework for Kannada-English code-mixed social media text. This repository contains:
-## 📊 Key Results
+##  Key Results
 
 - **Language-ID Agreement:** κ = 0.906 (almost perfect)
 - **Merge-Precision Audit:** 580/1358 compatible (0.4271 overall precision)
@@ -13,7 +13,7 @@ LCCN is a label-constrained cascade normalization framework for Kannada-English 
 
 ---
 
-## 📁 Repository Contents
+##  Repository Contents
 
 ### Documentation Files
 - **README.md** — This overview file
@@ -65,7 +65,7 @@ All notebooks are executable and available in this repository. Click on any file
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### To View Notebooks
 1. Scroll down to the file listing in this repository
@@ -99,7 +99,7 @@ jupyter notebook
 
 ---
 
-## 📚 Datasets
+## Datasets
 
 ### Kannada-English YouTube Emotion Corpus
 - **Size:** 40,000 comments (28K train, 6K val, 6K test)
@@ -122,44 +122,22 @@ For lexicon request procedure, see RESOURCES.md
 
 ---
 
-## 🎯 Paper Highlights
+## Paper Highlights
 
-✅ **Novel Framework:** First emotion-aware cascade normalization for code-mixed Kannada-English
+ **Novel Framework:** First emotion-aware cascade normalization for code-mixed Kannada-English
+**Rigorous Audits:** Two-pass merge-precision protocol (κ = 0.902), language-ID audit (κ = 0.906)
+**Complete Ablations:** Leave-one-out, guard arms, transliteration arms across 10 conditions
+**Statistical Rigor:** Per-seed McNemar tests, effect sizes, external validation on Twitter
+ **Reproducibility:** 32 public notebooks, fingerprint verification, complete GitHub release
 
-✅ **Rigorous Audits:** Two-pass merge-precision protocol (κ = 0.902), language-ID audit (κ = 0.906)
 
-✅ **Complete Ablations:** Leave-one-out, guard arms, transliteration arms across 10 conditions
-
-✅ **Statistical Rigor:** Per-seed McNemar tests, effect sizes, external validation on Twitter
-
-✅ **Reproducibility:** 32 public notebooks, fingerprint verification, complete GitHub release
-
----
-
-## 📞 Contact
-
-**Author:** Tejaswini M  
-**Email:** tejaswini@jssstuniv.in  
-**Affiliation:** JSS Science and Technology University (JSSSTU), Mysuru, India
-
-**Supervisor:** Dr. Anil Kumar K M  
-**Department:** Information Science and Engineering, JSSSTU
-
----
-
-## 📜 License
+##  License
 
 - **Code:** MIT License
 - **Lexicon (KEEL):** CC BY-SA 4.0 (request-based, institutional clearance required)
 - **Datasets:** See individual corpus documentation in RESOURCES.md
 
----
 
-## 🙏 Acknowledgments
-
-Supervised by Dr. Anil Kumar K M, Department of Information Science and Engineering, JSSSTU, Mysuru.
-
----
 
 **GitHub Repository:** https://github.com/tejaswininaryana/LCCN  
 **Manuscript Status:** Under major revision (IJIES)  
