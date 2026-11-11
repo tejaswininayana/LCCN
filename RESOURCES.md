@@ -1,17 +1,17 @@
-# LCCN Paper: Resources & Data
+LCCN Paper: Resources & Data
 
----
 
-## Corpus Details
 
-**Kannada-English YouTube Emotion Corpus**
-- **Size:** 40,000 comments
-- **Tokens:** 444,541
-- **Types:** 55,177 (TTR: 0.1241)
-- **Classes:** 4 emotions (happy, anger, disgust, sad)
-- **Annotation:** 3 annotators per comment
-- **Agreement:** Fleiss' κ = 0.8313
-- **Split:** 28K train, 6K val, 6K test (stratified by emotion)
+ Corpus Details
+
+Kannada-English YouTube Emotion Corpus
+- Size: 40,000 comments
+- Tokens: 444,541
+- Types:55,177 (TTR: 0.1241)
+- Classes: 4 emotions (happy, anger, disgust, sad)
+- Annotation:3 annotators per comment
+- Agreement: Fleiss' κ = 0.8313
+- Split: 28K train, 6K val, 6K test (stratified by emotion)
 
 | Emotion | Count | % |
 |---------|-------|---|
@@ -22,40 +22,31 @@
 
 ---
 
-## Lexical Resources (KEEL)
+ Lexical Resources (KEEL)
 
-**Kannada-English Emotion Lexicon (KEEL)**
-- **Resource Type:** Three normalized lexicons used in cascade
+Kannada-English Emotion Lexicon (KEEL)
+- Resource Type: Three normalized lexicons used in cascade
   1. Lexicon-based normalization (direct mapping)
   2. KOPE: Phonetic matching
   3. Distributional: Similarity matching
 
-- **Availability:** Request-based with institutional clearance
-- **License:** CC BY-SA 4.0
-- **SHA-256 Fingerprint:** `6a536dd437ba85b0`
+- Availability:Request-based with institutional clearance
+- SHA-256 Fingerprint: `6a536dd437ba85b0`
 
-**Why Restricted:**
-- Related to patent application in progress
-- Institutional IP clearance required
-- Verification via fingerprint ensures reproducibility
 
-**Request KEEL:**
+ KEEL:
 Contact: tejaswini@jssstuniv.in  
-Include: Your institution, research purpose, intended use
 
----
 
-## External Validation
+ External Validation
 
-**Kannada-English Twitter Emotion Corpus**
-- **Source:** [4] in references
-- **Size:** 4,394 tweets
-- **Classes:** 4 emotions (same as YouTube)
-- **Transfer Success:** Spearman rank correlation ρ = 0.879
+Kannada-English Twitter Emotion Corpus
+- Source: [4] in references
+- Size: 4,394 tweets
+- Classes: 4 emotions (same as YouTube)
+- Transfer Success:Spearman rank correlation ρ = 0.879
 
----
-
-## Computational Resources Used
+Computational Resources Used
 
 | Notebook | GPU | Epochs | Batch Size | Time |
 |----------|-----|--------|------------|------|
@@ -66,11 +57,9 @@ Include: Your institution, research purpose, intended use
 | lccn-r22c-missing-seeds | Tesla T4 | 10 | 32 | ~20 min |
 | paper1-nb4-lccn-xlmroberta | Tesla T4 | 10 | 32 | ~20 min |
 
-**All notebooks run on Kaggle free tier (GPU quotas permitting)**
+All notebooks run on Kaggle free tier (GPU quotas permitting)
 
----
-
-## Baseline Models
+ Baseline Models
 
 The paper evaluates 13 normalization methods:
 
@@ -84,7 +73,7 @@ The paper evaluates 13 normalization methods:
 
 ---
 
-## Classifiers Tested
+ Classifiers Tested
 
 - Logistic Regression (LR)
 - Linear SVM
@@ -95,9 +84,9 @@ The paper evaluates 13 normalization methods:
 
 ---
 
-## Key Metrics
+ Key Metrics
 
-### Language Identification (Section 3.7 & Table 12)
+ Language Identification (Section 3.7 & Table 12)
 
 | Threshold | P | R | F1 | F1_weighted |
 |-----------|---|---|----|----|
@@ -107,7 +96,7 @@ The paper evaluates 13 normalization methods:
 
 **Selected:** 2.5 threshold (best balance)
 
-### Merge Precision (Table 13)
+ Merge Precision (Table 13)
 
 | Category | Compatible | Incompatible | Unclear | Precision |
 |----------|-----------|--------------|---------|-----------|
@@ -118,7 +107,7 @@ The paper evaluates 13 normalization methods:
 
 ---
 
-## Paper Highlights
+Paper Highlights
 
 ✅ **Innovation:** First emotion-aware text normalization framework for code-mixed Kannada-English  
 ✅ **Rigor:** Two-pass audit protocol, 1,358 adjudicated pairs, κ=0.906 agreement  
